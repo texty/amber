@@ -1,0 +1,215 @@
+// ==============
+// Global imports
+// ==============
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+
+
+
+h1 {
+   font-size: 5em;
+   line-height: 1em;
+   padding-left:20%;
+   padding-top: 5%;
+   width: 100%;
+   @media #{$brk-narrow} {
+     font-size: 3em;
+     padding-top:3%;
+   }
+}
+
+h2 {
+    width: 100%;
+    & span {
+    background: rgba(204, 196, 54, 0.9);
+    padding: 7px;
+    color: $white;
+    }
+    &.subtitle {
+       padding-left:20%;
+       color:$main-text;
+       margin-top: -10px;
+       width: 90%;
+    }
+    @media #{$brk-narrow} {
+      font-size: 1.8em;
+    }
+}
+
+h3 {
+    text-align: center;
+}
+
+h3 span{
+ background: rgb(51, 37, 50); /* fallback color */
+ background: rgba(51, 37, 50, 0.7);
+ padding: 5px;
+}
+
+
+p  {
+    &.fact {
+    margin-top: 3.5em;
+    &::first-letter {
+    float: left;
+    margin: 0 20px 0 0;
+    font-size: 52px;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 1;
+    }
+  }
+    & span {
+      background: rgba(204, 196, 54, 0.5);
+      padding: 1px;
+    }
+    & span.itallic {
+      background: none;
+      font-style: italic;
+    }
+    &.map-text {
+      position: absolute;
+      bottom: -15px;
+      left: 5px;
+      width: 95%;
+      font-size: 1.2em;
+      & span {
+        background: rgba(204, 196, 54, 0.8);
+        padding: 1.5px;
+        top: 100px;
+      }
+
+    }
+}
+
+.padding-right {
+  padding-right: 10px;
+  padding-top: 10px;
+  @media #{$brk-narrow} {
+    padding-right: 0px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+.img-with-text {
+  position: relative;
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+  @media #{$brk-narrow} {
+    display: block;
+  }
+}
+
+.desktop {
+  display: block;
+  @media #{$brk-narrow} {
+    display: none;
+  }
+}
+
+.main-top {
+ background-color: #DBCD26;
+}
+
+.main-pic {
+ margin-top: -5em;
+}
+
+.bottom {
+  padding-bottom: 5em;
+}
+
+.upper-margin {
+  padding-top: 5em;
+}
+
+.credits {
+  margin-left: 20%;
+  position: relative;
+  width: 350px;
+  color:$main-text;
+  font-size: 1.2em;
+  & span {
+    font-weight: bold;
+  }
+}
+
+
+.condensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.graphs {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.maps {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.bold {
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+
+.quote {
+  font-size: 2.3em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgba(204, 196, 54, 1);
+  margin-top: 1em;
+  &::before {
+    font-family: Arial;
+    content: "\201C";
+    font-size: 7em;
+    position: relative;
+    left: 0em;
+    top: 0.45em;
+  }
+  @media #{$brk-spnarrow} {
+  font-size: 1.7em;
+  }
+}
+
+.last {
+  margin-bottom: 10em;
+}
+
+#g-map-Artboard_1{
+  position:relative;
+  overflow:hidden;
+  width:2250px;
+}
+.g-aiAbs{
+  position:absolute;
+}
+.g-aiImg{
+  display:block;
+  width:100% !important;
+}
+
+#g-map-Artboard_1 .g-aiPstyle0 {
+  font-size:24px;
+  line-height:29px;
+  color:#4d4d4d;
+}
+.g-aiPtransformed p { white-space: nowrap; }
