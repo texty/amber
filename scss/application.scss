@@ -36,6 +36,9 @@ h2 {
     }
     @media #{$brk-narrow} {
       font-size: 1.8em;
+      & span {
+      padding: 2px;
+      }
     }
 }
 
@@ -96,6 +99,12 @@ p  {
 .center {
   text-align: center;
 }
+
+.yellow {
+  color:#B5AA3E;
+  margin-bottom: 0px;
+}
+
 .img-with-text {
   position: relative;
   width: 100%;
@@ -142,30 +151,11 @@ p  {
   }
 }
 
-
-.condensed {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  margin-top: 2em;
-}
-
-
-
 .row {
   margin-left: 0;
   margin-right: 0;
 }
 
-.graphs {
-  margin-top: 7em;
-  margin-bottom: 7em;
-}
-
-.maps {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
 
 .bold {
   font-weight: bold;
@@ -175,15 +165,14 @@ p  {
 .quote {
   font-size: 2.3em;
   font-family: 'Open Sans Condensed', sans-serif;
-  color: rgba(204, 196, 54, 1);
-  margin-top: 1em;
+  color: #B5AA3E;
   &::before {
     font-family: Arial;
     content: "\201C";
     font-size: 7em;
     position: relative;
     left: 0em;
-    top: 0.45em;
+    top: 0.5em;
   }
   @media #{$brk-spnarrow} {
   font-size: 1.7em;
