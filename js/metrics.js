@@ -17,7 +17,7 @@
 		window.onload = function() {
 			Parse.initialize("ayCTTGvjAQ7Po3k1qAfvkJkPu00gWZ0V0ZSKnXB8", 
 					"LsgPzOsHk7VJBhsi84qPXucluhVaflBFfMCbbtZf");
-  			TimeMe.setIdleDurationInSeconds(30);
+  			TimeMe.setIdleDurationInSeconds(180);
   			TimeMe.setCurrentPageName("amber");
   			TimeMe.initialize();  
 		}
