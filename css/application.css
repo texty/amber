@@ -12,6 +12,7 @@ body {
 
 .social-icons {
   position: fixed;
+  right: 3em;
   z-index: 1000; }
 
 .fa-twitter,
@@ -90,7 +91,8 @@ p {
       margin-left: 5%; } }
 
 .social-icons {
-  padding-top: 10px; }
+  padding-top: 15px;
+   }
 
 .logo {
   float: left;
@@ -119,12 +121,7 @@ p {
     .dj_header {
       display: none; } }
 
-.social-icons {
-  color: #999999; }
 
-.fa-facebook:hover,
-.fa-twitter:hover {
-  color: #FAA61A; }
 
 /* ======== Footer ======== */
 #footer {
